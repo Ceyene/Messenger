@@ -1,7 +1,5 @@
 import React from "react";
 import "./styles.css";
-import Check from "./img/doble-verificacion.png";
-import Erase from "./img/borrar.png";
 
 export default class Messenger extends React.Component {
   state = {
@@ -65,7 +63,7 @@ export default class Messenger extends React.Component {
                 <div>
                   <button className="mensaje_button">
                     <img
-                      src={Check}
+                      src="https://www.flaticon.es/svg/static/icons/svg/1632/1632596.svg"
                       alt="Mensaje leído"
                       onClick={this.checkHandlerReceived(index)}
                     />
@@ -82,7 +80,10 @@ export default class Messenger extends React.Component {
                   className="mensaje_button"
                   onClick={this.deleteHandler(index)}
                 >
-                  <img src={Erase} alt="Borrar mensaje" />
+                  <img
+                    src="https://www.flaticon.es/svg/static/icons/svg/1632/1632708.svg"
+                    alt="Borrar mensaje"
+                  />
                 </button>
               </li>
             ))}
